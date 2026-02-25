@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: votacao-api
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/votacao}
     username: ${DB_USER:postgres}
